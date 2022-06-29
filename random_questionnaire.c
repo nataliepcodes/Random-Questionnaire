@@ -38,28 +38,24 @@ int main()
     char questions[ARRAY_SIZE][STRING_LENGTH] = {"What's your favourite programming language?", "What's your favourite SHELL command?", "If a debugging duck could talk, what would it say?", "What book are you currently reading?", "Which programming language are you learning next?", "What's your favourite ice-cream?", "Which tech invention are you most fascinated by?", "Where do you see yourself in 5 years?", "What's the name of your best friend?", "What makes you happy?"};
     char answer[STRING_LENGTH];
 
-    int random = generateRandomQuestion();
-
     int i = 1;
     while (i <= 10)
     {
+        int random = generateRandomQuestion();
         printf("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
         printf("\n");
         printf("#%d ", i);//question number
-        
+     
         displayQuestion(random, questions);
-
+    
         printf("\n");
         printf("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
         printf("\n");
-
 
         printf("YOUR ANSWER: ");
         gets(answer);
         printf("\n");
         i++;
-        //to be fixed: random needs to be 10x random, not just 1 random 10x 
-
     }
     printf("* * * * Thank you for your answers!  Have a nice day! * * * *\n");
     
