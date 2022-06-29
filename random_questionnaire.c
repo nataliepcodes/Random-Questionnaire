@@ -41,7 +41,7 @@ int main()
     int random = generateRandomQuestion();
 
     int i = 1;
-    while (i <= 3)
+    while (i <= 10)
     {
         printf("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
         printf("\n");
